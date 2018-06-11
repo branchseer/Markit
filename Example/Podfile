@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'Markit_Example' do
+    pod 'Markit', :path => '../'
+end
+
+target 'Markit_Tests' do
+    pod 'Markit', :path => '../'
+
+end

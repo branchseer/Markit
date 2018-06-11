@@ -1,0 +1,31 @@
+<x:Markit
+    xmlns="https://wangchi.me/markit/v0_1/objc?prefix=NS"
+    xmlns:local="https://wangchi.me/markit/v0_1/objc?module=Markit_Example"
+    xmlns:x="https://wangchi.me/markit/v0_1">
+    <local:MyView x:id="view" x:name="view">
+        <Button x:id="aButton" x:name="aButton" bezelStyle="rounded" target="$#" action="buttonClicked">I am an NSButton</Button>
+        <TextField textColor="#ff8942" x:id="label" x:name="label" editable="false" bezeled="false" drawsBackground="false">This is a NSTextField</TextField>
+        <TextField x:id="label2" textColor="white" backgroundColor="red" editable="false" bezeled="false">
+            <x:Reference x:expression="#texts.labelText" />
+        </TextField>
+        
+        <local:MyView.layoutGuides>
+            <LayoutGuide x:id="lg" />
+        </local:MyView.layoutGuides>
+        
+    </local:MyView>
+    
+    <LayoutConstraint firstItem="$aButton" firstAttribute="top" secondItem="$view" secondAttribute="top" constant="10" active="true" />
+    <LayoutConstraint firstItem="$aButton" firstAttribute="centerX" secondItem="$view" secondAttribute="centerX" active="true" />
+
+    <LayoutConstraint firstItem="$view" firstAttribute="centerX" secondItem="$lg" secondAttribute="centerX" active="true" />
+    <LayoutConstraint firstItem="$view" firstAttribute="centerY" secondItem="$lg" secondAttribute="centerY" active="true" />
+
+    <LayoutConstraint firstItem="$lg" firstAttribute="top" secondItem="$label" secondAttribute="top" active="true" />
+    <LayoutConstraint firstItem="$lg" firstAttribute="centerX" secondItem="$label" secondAttribute="centerX" active="true" />
+
+    <LayoutConstraint firstItem="$lg" firstAttribute="bottom" secondItem="$label2" secondAttribute="bottom" active="true" />
+    <LayoutConstraint firstItem="$lg" firstAttribute="centerX" secondItem="$label2" secondAttribute="centerX" active="true" />
+
+    <LayoutConstraint firstItem="$label" firstAttribute="bottom" secondItem="$label2" secondAttribute="top" active="true" />
+</x:Markit>

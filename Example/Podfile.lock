@@ -1,0 +1,16 @@
+PODS:
+  - Markit (0.1.0)
+
+DEPENDENCIES:
+  - Markit (from `../`)
+
+EXTERNAL SOURCES:
+  Markit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Markit: 952f2d56aa732852cff70da1570de24b6d2183cc
+
+PODFILE CHECKSUM: 3b4c7d994ec24c27436fb98396c4336a981e8997
+
+COCOAPODS: 1.4.0
