@@ -9,11 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Markit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Markit.'
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.summary          = 'Build Objective-C objects (views, menus, etc.) with XML'
 
   s.homepage         = 'https://github.com/patr0nus/Markit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -24,7 +20,6 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/patr0nus/Markit.git', :tag => s.version.to_s }
 
   s.osx.deployment_target = "10.11"
-  s.ios.deployment_target = "8.0"
 
   s.source_files = 'Source/**/*'
   
